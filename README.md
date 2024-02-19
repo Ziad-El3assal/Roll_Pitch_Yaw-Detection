@@ -22,7 +22,24 @@ We evaluated multiple models to determine the best approach for predicting face 
 - Decision Tree: RMSE of 0.605653
 - AdaBoost: RMSE of 0.887643
 - Support Vector Machine (SVM): RMSE of 0.410460
+```{r}
+library(ggplot2)
 
+# Create a data frame with model names and RMSE values
+data <- data.frame(Model = c("XGBoost", "Linear Regression", "Lasso Regression", "Ridge Regression", 
+                              "ElasticNet Regression", "Random Forest", "K-Nearest Neighbors (KNN)", 
+                              "Decision Tree", "AdaBoost", "Support Vector Machine (SVM)"),
+                   RMSE = c(0.579053, 1.342557, 0.395986, 0.397217, 0.395986, 0.464200, 0.4794939, 
+                            0.605653, 0.887643, 0.410460))
+
+# Create a bar plot
+ggplot(data, aes(x = Model, y = RMSE)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "RMSE of Different Models",
+       x = "Model",
+       y = "RMSE")
+```
 ## Model Selection
 
 After analyzing the results, we decided to focus on AdaBoost due to its promising performance. We further fine-tuned the model's hyperparameters using grid search, resulting in an improved RMSE of 0.39581.
