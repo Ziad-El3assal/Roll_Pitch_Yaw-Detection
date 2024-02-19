@@ -35,10 +35,10 @@ We saved the trained AdaBoost model to disk for future use.
 
 To validate the model's performance, we ran tests on a video clip from "Sherlock Holmes" where the character was moving his head. Here's a sample output:
 
-[Link to the Video](https://drive.google.com/file/d/1-Xo5hhtfwLkN5pExR--quQFiuIWhki6J/view?usp=sharing)
+[Link to the Video]([https://drive.google.com/file/d/1-Xo5hhtfwLkN5pExR--quQFiuIWhki6J/view?usp=sharing](https://drive.google.com/file/d/1-Q0XGxDtLqOBL7CYEq6KzXnuExCip-1C/view?usp=sharing))
 
 <video width="640" height="360" controls>
-  <source src="[https://www.example.com/your-video.mp4](https://drive.google.com/file/d/1-Xo5hhtfwLkN5pExR--quQFiuIWhki6J/view?usp=sharing)" type="video/mp4">
+  <source src="[[https://www.example.com/your-video.mp4](https://drive.google.com/file/d/1-Xo5hhtfwLkN5pExR--quQFiuIWhki6J/view?usp=sharing)](https://drive.google.com/file/d/1-Q0XGxDtLqOBL7CYEq6KzXnuExCip-1C/view?usp=sharing)" type="video/mp4">
 </video>
 
 
