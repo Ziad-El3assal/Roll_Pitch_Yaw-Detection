@@ -39,7 +39,6 @@ To validate the model's performance, we ran tests on a video clip from "Sherlock
 
 <video width="640" height="360" controls>
   <source src="[https://www.example.com/your-video.mp4](https://drive.google.com/file/d/1-Xo5hhtfwLkN5pExR--quQFiuIWhki6J/view?usp=sharing)" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
 
 
