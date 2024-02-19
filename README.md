@@ -22,24 +22,8 @@ We evaluated multiple models to determine the best approach for predicting face 
 - Decision Tree: RMSE of 0.605653
 - AdaBoost: RMSE of 0.887643
 - Support Vector Machine (SVM): RMSE of 0.410460
-```{r}
-library(ggplot2)
+![image](https://github.com/Ziad-El3assal/Roll_Pitch_Yaw-Detection/assets/84142720/17d5142c-acb7-4948-92cc-cc1bd822f3bf)
 
-# Create a data frame with model names and RMSE values
-data <- data.frame(Model = c("XGBoost", "Linear Regression", "Lasso Regression", "Ridge Regression", 
-                              "ElasticNet Regression", "Random Forest", "K-Nearest Neighbors (KNN)", 
-                              "Decision Tree", "AdaBoost", "Support Vector Machine (SVM)"),
-                   RMSE = c(0.579053, 1.342557, 0.395986, 0.397217, 0.395986, 0.464200, 0.4794939, 
-                            0.605653, 0.887643, 0.410460))
-
-# Create a bar plot
-ggplot(data, aes(x = Model, y = RMSE)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "RMSE of Different Models",
-       x = "Model",
-       y = "RMSE")
-```
 ## Model Selection
 
 After analyzing the results, we decided to focus on AdaBoost due to its promising performance. We further fine-tuned the model's hyperparameters using grid search, resulting in an improved RMSE of 0.39581.
@@ -52,11 +36,7 @@ We saved the trained AdaBoost model to disk for future use.
 
 To validate the model's performance, we ran tests on a video clip from "Sherlock Holmes" where the character was moving his head. Here's a sample output:
 
-[Link to the Video]([https://drive.google.com/file/d/1-Xo5hhtfwLkN5pExR--quQFiuIWhki6J/view?usp=sharing](https://drive.google.com/file/d/1-Q0XGxDtLqOBL7CYEq6KzXnuExCip-1C/view?usp=sharing)])
-
-<video width="640" height="360" controls>
-  <source src="https://drive.google.com/file/d/1-Q0XGxDtLqOBL7CYEq6KzXnuExCip-1C/view?usp=sharing" type="video/mp4">
-</video>
+[Link for output sample](https://drive.google.com/file/d/1-Q0XGxDtLqOBL7CYEq6KzXnuExCip-1C/view?usp=sharing)
 
 
 ## Model Descriptions
