@@ -22,7 +22,7 @@ We evaluated multiple models to determine the best approach for predicting face 
 - Decision Tree: RMSE of 0.605653
 - AdaBoost: RMSE of 0.887643
 - Support Vector Machine (SVM): RMSE of 0.410460
-![image](https://github.com/Ziad-El3assal/Roll_Pitch_Yaw-Detection/assets/84142720/17d5142c-acb7-4948-92cc-cc1bd822f3bf)
+![image](https://drive.google.com/file/d/1MA87Am_VfDrMk8-_ZWFyvTTnkaa7c0ME/view?usp=sharing)
 
 ## Model Selection
 
