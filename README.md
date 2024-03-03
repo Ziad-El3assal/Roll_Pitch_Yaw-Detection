@@ -22,7 +22,7 @@ We evaluated multiple models to determine the best approach for predicting face 
 - Decision Tree: RMSE of 0.605653
 - AdaBoost: RMSE of 0.887643
 - Support Vector Machine (SVM): RMSE of 0.410460
-![image](https://drive.google.com/file/d/1MA87Am_VfDrMk8-_ZWFyvTTnkaa7c0ME/view?usp=sharing)
+![image](https://github.com/Ziad-El3assal/Roll_Pitch_Yaw-Detection/assets/84142720/17d5142c-acb7-4948-92cc-cc1bd822f3bf)
 
 ## Model Selection
 
@@ -36,7 +36,7 @@ We saved the trained AdaBoost model to disk for future use.
 
 To validate the model's performance, we ran tests on a video clip from "Sherlock Holmes" where the character was moving his head. Here's a sample output:
 
-[Link for output sample](https://drive.google.com/file/d/1-Q0XGxDtLqOBL7CYEq6KzXnuExCip-1C/view?usp=sharing)
+[Link for output sample](https://drive.google.com/file/d/1MA87Am_VfDrMk8-_ZWFyvTTnkaa7c0ME/view?usp=sharing)
 
 
 ## Model Descriptions
